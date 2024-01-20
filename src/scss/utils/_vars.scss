@@ -5,11 +5,22 @@ $tablet-small: 768px;
 $mobile: 576px;
 
 :root {
-	--Montserrat: 'Poppins', sans-serif;
-	--Muli: 'Poppins', sans-serif;
-	--transition: .2s all ease-in-out;
+  --Montserrat: "Montserrat", sans-serif;
+  --Mulish: "Mulish", sans-serif;
+  --transition: 0.2s all ease-in-out;
 
-	--c-primary: #0b8fed;
-	--c-text-white: #fff;
-	--c-border: #eee;
+  --Mon-7-46: 700 46px / normal var(--Montserrat);
+  --Mul-4-20: 400 20px / normal var(--Mulish);
+
+  --c-text-color1: #001a49;
+  --c-text-color2: #4f596a;
+
+  --c-background-before: linear-gradient(36deg, #ffd7a9 9.11%, #ffae70 71.64%);
+  --c-background-logo: linear-gradient(44deg, #cd10ff 15.75%, #9f06ff 84.63%);
+  --c-filter-logo: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+
+  --c-primary: #0b8fed;
+  --c-text-white: #fff;
+  --c-border: #eee;
 }
