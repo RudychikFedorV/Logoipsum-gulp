@@ -29,10 +29,7 @@
 
     &::before,
     &::after {
-      content: "";
-      display: block;
-      position: absolute;
-      border-radius: 50%;
+      @include pseudo-element;
       background: var(--c-background-before);
     }
     &::before {
@@ -47,7 +44,6 @@
       opacity: 0.3;
       bottom: -17px;
       right: -40px;
-      z-index: -1;
     }
 
     &__container {

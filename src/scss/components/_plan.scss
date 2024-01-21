@@ -1,0 +1,100 @@
+.plan {
+    position: relative;
+
+  &__h1 {
+    color: var(--c-text-color1);
+    text-align: center;
+    font: var(--Mon-7-46);
+    line-height: 56px;
+    margin-bottom: 20px;
+  }
+  &__h5 {
+    max-width: 560px;
+    color: var(--c-text-color2);
+    text-align: center;
+    margin-inline: auto;
+    font: var(--Mul-4-20);
+    line-height: 30px;
+    margin-bottom: 100px;
+  }
+  .plan-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+
+    &::before,
+    &::after {
+      @include pseudo-element;
+    }
+
+    &::before {
+      width: 1020px;
+      height: 172px;
+      opacity: 0.05;
+      border-radius: 21px;
+      background: var(--c-background-logo);
+    }
+
+    &::after {
+      width: 382px;
+      height: 382px;
+      background: var(--c-background-before);
+      top: -200px;
+      right: -500px;
+    }
+
+    .plan-sections {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      padding-left: 46px;
+
+      &__info {
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+      }
+
+      &__img {
+        padding: 15px;
+        border-radius: 50%;
+        background: var(--c-text-white);
+      }
+      &__title {
+        color: var(--c-text-color1);
+        font: var(--Mon-7-24);
+        line-height: 24px;
+        margin-bottom: 20px;
+      }
+      &__desc {
+        max-width: 501px;
+        color: var(--c-text-color2);
+        font: var(--Mul-4-16);
+        line-height: 24px;
+      }
+    }
+    &__btn {
+      display: flex;
+      align-items: center;
+      color: var(--c-text-white);
+      font: var(--Mul-6-16);
+      border-radius: 33px;
+      background: var(--c-background-logo);
+      padding: 23px 38px;
+      transition: var(--transition);
+      &:hover {
+        color: var(--c-text-color1);
+      }
+      &:active {
+        color: var(--c-text-active);
+      }
+    }
+    &__span {
+      width: 1px;
+      height: 30px;
+      background: var(--c-text-color3);
+      margin: 0 35px;
+    }
+  }
+}
