@@ -1,0 +1,61 @@
+.subscribe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  padding: 63px 0 50px 0;
+  //   opacity: 0.05;
+  background: linear-gradient(44deg, #cd10ff 15.75%, #9f06ff 84.63%);
+
+  
+
+  &__input {
+    display: flex;
+    align-items: center;
+    max-width: 890px;
+    width: 100%;
+    margin-inline: auto;
+    background: #f9f1fe;
+    padding-right: 14px;
+    border-radius: 33px;
+    background: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.05);
+
+    button {
+      border-radius: 22px;
+      background: #8842f0;
+      padding: 11px 25px;
+    //   font: var(--Button);
+    //   color: var(--c-text-white);
+      cursor: pointer;
+      display: inline-block;
+      border: 0;
+      outline: 0;
+
+      @include mobile {
+        padding: 0;
+        flex-shrink: 0;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        .text {
+          display: none;
+        }
+      }
+    }
+
+    input {
+      width: 100%;
+      padding: 21px 31px;
+      background: transparent;
+      border: 0;
+      outline: 0;
+      color: #000;
+    //   font: var(--Paragraph);
+
+      &::placeholder {
+        color: #6c6c6c;
+      }
+    }
+  }
+}

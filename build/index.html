@@ -8,7 +8,9 @@
 	<title>Logoipsum</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+		rel="stylesheet">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="./css/main.css" />
 </head>
@@ -16,48 +18,78 @@
 <body>
 	<div class="wrapper">
 		<div class="container">
-			<header class="header">
-	<div class="header__logo"><img src="../../img/header/logo.svg" alt="Logo"></div>
-	<div class="header__nav">
-		<div class="header__backdrop" id="headerBackdrop" onclick="navToggle()"></div>
-		<ul class="header__ul" id="headerUl">
-
-			<li class="header__li"><a class="header__a" href="/">Course topics</a></li>
-			<li class="header__li"><a class="header__a" href="/">What students say</a></li>
-
-			<li class="header__li"><a class="header__a" href="/">Sign in</a></li>
-			<li class="header__li"><a class="header__a" href="/">Get started</a></li>
-			
-			<span class="material-icons icon-close" onclick="navToggle()">close</span>
-		</ul>
-		<span class="material-icons icon-menu" onclick="navToggle()">menu</span>
-	</div>
-</header>
-
-			
-			
-			
-			<section class="lector">
-    <div class="lector-info">
-        <h3 class="lector-info__title">Hi, I am David, your course instructor.</h3>
-        <p class="lector-info__desc">Create beautiful webflow sites with flowbase. Clone for
-            free and get started building a site today.</p>
-    </div>
-    <div class="lector-logo">
-        <div class="lector-logo__container">
-            <img src="../../img/lector/logo.png" alt="Logo">
+	<header class="header">
+		<a href="/" class="header__logo"><img src="../../img/header/logo.svg" alt="Logo"></a>
+		<nav class="header__nav">
+			<div class="header__backdrop" id="headerBackdrop" onclick="navToggle()"></div>
+			<ul class="header__ul" id="headerUl">
+				<li class="header__li"><a class="header__a" href="/">Course topics</a></li>
+				<li class="header__li"><a class="header__a" href="/">What students say</a></li>
+				<li class="header__li"><a class="header__a" href="/">Sign in</a></li>
+				<li class="header__li"><a class="header__a btn" href="/">Get started</a></li>
+				<span class="material-icons icon-close" onclick="navToggle()">close</span>
+			</ul>
+			<span class="material-icons icon-menu" onclick="navToggle()">menu</span>
+		</nav>
+	</header>
+</div>
+		<div class="container">
+    <section class="hero">
+        <div class="hero__title">Learn no-code tools today.</div>
+        <div class="hero__desc">Create beautiful webflow sites with flowbase. Clone for
+            free and get started building a site today.
         </div>
-
+        <a href="/" class="hero__btn btn">Get started</a>
+        <div class="hero__block">
+            <div class="hero__icons">
+                <div class="hero__icons-icon3">
+                    <img src="../../img/hero/icon-3.png" alt="Icons">
+                </div>
+                <div class="hero__icons-icon2">
+                    <img src="../../img/hero/icon-2.png" alt="Icons">
+                </div>
+                <div class="hero__icons-icon3">
+                    <img src="../../img/hero/icon-1.png" alt="Icons">
+                </div>
+            </div>
+            <div class="hero__icons-text">Join over <span> 4,000+ </span> students</div>
+        </div>
+    </section>
+</div>
+		
+		
+		<div class="container">
+    <section class="lector">
+        <div class="lector-info">
+            <h3 class="lector-info__title">Hi, I am David, your course instructor.</h3>
+            <p class="lector-info__desc">Create beautiful webflow sites with flowbase. Clone for
+                free and get started building a site today.</p>
+        </div>
+        <div class="lector-logo">
+            <div class="lector-logo__container">
+                <img src="../../img/lector/logo.png" alt="Logo">
+            </div>
+        </div>
+    </section>
+</div>
+		
+		
+		
+		<section class="subscribe">
+    <div class="subscribe__logo">
+        <img src="../../img/header/logo.svg" alt="Logo">
     </div>
+    <form class="subscribe__imput">
+        <input type="email" placeholder="Stay in the loop  - sign up with your email">
+        <button type="submit">
+            <span class="text">Subscribe</span>
+        </button>
+    </form>
 </section>
-			
-			
-			
-			<footer class="footer">
+		<footer class="footer">
 	<div>Footer</div>
 </footer>
 
-		</div>
 	</div>
 
 

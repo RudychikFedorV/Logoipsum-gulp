@@ -10,17 +10,23 @@ $mobile: 576px;
   --transition: 0.2s all ease-in-out;
 
   --Mon-7-46: 700 46px / normal var(--Montserrat);
+  --Mon-7-60: 700 60px / normal var(--Montserrat);
+
+  --Mul-4-16: 400 16px / normal var(--Mulish);
+  --Mul-7-16: 700 16px / normal var(--Mulish);
+  --Mul-7-20: 700 20px / normal var(--Mulish);
   --Mul-4-20: 400 20px / normal var(--Mulish);
 
   --c-text-color1: #001a49;
   --c-text-color2: #4f596a;
+  --c-text-hover: #9f06ff;
+  --c-text-active: #ffae70;
+  --c-text-white: #fff;
+  --c-border: #eee;
 
   --c-background-before: linear-gradient(36deg, #ffd7a9 9.11%, #ffae70 71.64%);
   --c-background-logo: linear-gradient(44deg, #cd10ff 15.75%, #9f06ff 84.63%);
   --c-filter-logo: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
-
-  --c-primary: #0b8fed;
-  --c-text-white: #fff;
-  --c-border: #eee;
+  
 }
