@@ -82,6 +82,7 @@
     border-radius: 33px;
     background: var(--c-background-logo);
     color: var(--c-text-white);
+    transition: var(--transition);
 
     @include tablet {
       background: none;

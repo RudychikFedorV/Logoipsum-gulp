@@ -3,11 +3,15 @@
   flex-direction: column;
   margin-top: 134px;
   position: relative;
+  margin-bottom: 194px;
 
+  &::before,
   &::after {
     content: "";
     display: block;
     position: absolute;
+  }
+  &::after {
     width: 1090px;
     height: 700px;
     border-radius: 0px 20px 20px 0px;
@@ -19,13 +23,10 @@
   }
 
   &::before {
-    content: "";
-    display: block;
-    position: absolute;
     width: 590px;
     height: 360px;
     border-radius: 20px 0px 0px 20px;
-    background: #001a49;
+    background: var(--c-text-color1);
     box-shadow: 0px 32px 44px 0px #818a8c;
     left: 690px;
   }
@@ -57,6 +58,13 @@
     background: var(--c-background-logo);
     max-width: 206px;
     flex-shrink: 0;
+    transition: var(--transition);
+    &:hover {
+      color: var(--c-text-color1);
+    }
+    &:active {
+      color: var(--c-text-active);
+    }
   }
   &__block {
     display: flex;
@@ -73,5 +81,11 @@
     span {
       color: var(--c-text-hover);
     }
+  }
+  &__play {
+    display: block;
+    position: absolute;
+    right: -55px;
+    top: 145px;
   }
 }

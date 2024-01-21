@@ -9,6 +9,7 @@ $mobile: 576px;
   --Mulish: "Mulish", sans-serif;
   --transition: 0.2s all ease-in-out;
 
+  --Mon-7-40: 700 40px / normal var(--Montserrat);
   --Mon-7-46: 700 46px / normal var(--Montserrat);
   --Mon-7-60: 700 60px / normal var(--Montserrat);
 
@@ -23,6 +24,7 @@ $mobile: 576px;
   --c-text-active: #ffae70;
   --c-text-white: #fff;
   --c-border: #eee;
+  --c-borderR: 1px solid #e7eaeb;
 
   --c-background-before: linear-gradient(36deg, #ffd7a9 9.11%, #ffae70 71.64%);
   --c-background-logo: linear-gradient(44deg, #cd10ff 15.75%, #9f06ff 84.63%);

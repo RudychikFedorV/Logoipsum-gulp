@@ -1,0 +1,50 @@
+.statistics {
+  border-radius: 21px;
+  border: var(--c-borderR);
+  background: var(--c-text-white);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 30px 0;
+  position: relative;
+
+  &::before,
+  &::after {
+    @include pseudo-element;
+  }
+  &::before {
+    left: -206px;
+    top: 20px;
+    width: 288px;
+    height: 288px;
+    background: linear-gradient(44deg, #cd10ff 15.75%, #9f06ff 84.63%);
+  }
+
+  &::after {
+    z-index: 2;
+    left: -4px;
+    bottom: calc(-50px - 86px);
+    width: 86px;
+    height: 86px;
+    background: linear-gradient(36deg, #ffd7a9 9.11%, #ffae70 71.64%);
+  }
+
+  .statistic-item {
+    padding: 20px 0;
+
+    &__amount {
+      color: var(--c-text-color1);
+      text-align: center;
+      font: var(--Mon-7-40);
+      line-height: 50px;
+      margin-bottom: 2px;
+    }
+    &__desc {
+      color: var(--c-text-color2);
+      text-align: center;
+      font: var(--Mul-4-16);
+    }
+    &:not(:last-child) {
+      border-right: var(--c-borderR);
+    }
+  }
+}
