@@ -1,5 +1,14 @@
 .plan {
-    position: relative;
+  position: relative;
+
+  &::before {
+    @include pseudo-element;
+    width: 382px;
+    height: 382px;
+    background: var(--c-background-before);
+    top: -200px;
+    right: -500px;
+  }
 
   &__h1 {
     color: var(--c-text-color1);
@@ -15,45 +24,34 @@
     margin-inline: auto;
     font: var(--Mul-4-20);
     line-height: 30px;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
   }
-  .plan-block {
+  &__containers {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-   
+    flex-direction: column;
+    gap: 30px;
 
-    &::before,
-    &::after {
-      @include pseudo-element;
-    }
-
-    &::before {
-      width: 1020px;
-      height: 172px;
-      opacity: 0.05;
-      border-radius: 21px;
+    .plan-block {
       background: var(--c-background-logo);
-    }
+      // opacity: 0.05;
+      border-radius: 21px;
+      padding: 39px 54px 41px 46px;
 
-    &::after {
-      width: 382px;
-      height: 382px;
-      background: var(--c-background-before);
-      top: -200px;
-      right: -500px;
-    }
+      &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
 
-    .plan-sections {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-      padding-left: 46px;
+      &__sections {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
 
       &__info {
         display: flex;
         flex-direction: column;
-        margin-top: 100px;
       }
 
       &__img {
@@ -73,28 +71,29 @@
         font: var(--Mul-4-16);
         line-height: 24px;
       }
-    }
-    &__btn {
-      display: flex;
-      align-items: center;
-      color: var(--c-text-white);
-      font: var(--Mul-6-16);
-      border-radius: 33px;
-      background: var(--c-background-logo);
-      padding: 23px 38px;
-      transition: var(--transition);
-      &:hover {
-        color: var(--c-text-color1);
+
+      &__btn {
+        display: flex;
+        align-items: center;
+        color: var(--c-text-white);
+        font: var(--Mul-6-16);
+        border-radius: 33px;
+        background: var(--c-background-logo);
+        padding: 23px 38px;
+        transition: var(--transition);
+        &:hover {
+          color: var(--c-text-color1);
+        }
+        &:active {
+          color: var(--c-text-active);
+        }
       }
-      &:active {
-        color: var(--c-text-active);
+      &__span {
+        width: 1px;
+        height: 30px;
+        background: var(--c-text-color3);
+        margin: 0 35px;
       }
-    }
-    &__span {
-      width: 1px;
-      height: 30px;
-      background: var(--c-text-color3);
-      margin: 0 35px;
     }
   }
 }

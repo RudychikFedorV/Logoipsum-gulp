@@ -17,8 +17,8 @@
     border-radius: 0px 20px 20px 0px;
     opacity: 0.05;
     background: var(--c-background-logo);
-    top: -134px;
-    left: -160px;
+    top: -150px;
+    left: -300px;
     z-index: -1;
   }
 
@@ -28,7 +28,7 @@
     border-radius: 20px 0px 0px 20px;
     background: var(--c-text-color1);
     box-shadow: 0px 32px 44px 0px #818a8c;
-    left: 690px;
+    left: 590px;
   }
 
   &__title {
@@ -86,6 +86,6 @@
     display: block;
     position: absolute;
     right: 75px;
-    top: 145px;
+    top: 135px;
   }
 }
