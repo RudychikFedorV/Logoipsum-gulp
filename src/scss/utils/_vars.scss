@@ -13,10 +13,13 @@ $mobile: 576px;
   --Mon-7-40: 700 40px / normal var(--Montserrat);
   --Mon-7-46: 700 46px / normal var(--Montserrat);
   --Mon-7-24: 700 24px / normal var(--Montserrat);
+  --Mon-7-20: 700 20px / normal var(--Montserrat);
+  --Mon-7-12: 700 12px / normal var(--Montserrat);
 
   --Mul-4-16: 400 16px / normal var(--Mulish);
   --Mul-6-16: 600 16px / normal var(--Mulish);
   --Mul-7-16: 700 16px / normal var(--Mulish);
+  --Mul-4-20: 400 20px / normal var(--Mulish);
   --Mul-7-20: 700 20px / normal var(--Mulish);
   --Mul-4-20: 400 20px / normal var(--Mulish);
 
@@ -28,10 +31,13 @@ $mobile: 576px;
   --c-text-white: #fff;
   --c-border: #eee;
   --c-borderR: 1px solid #e7eaeb;
+  --c-borderC: 1px solid #cd10ff;
 
   --c-background-before: linear-gradient(36deg, #ffd7a9 9.11%, #ffae70 71.64%);
   --c-background-logo: linear-gradient(44deg, #cd10ff 15.75%, #9f06ff 84.63%);
   --c-filter-logo: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-
+  --c-background-block: linear-gradient(44deg,rgba(205, 16, 255, 0.05) 15.75%,rgba(159, 6, 255, 0.05) 84.63%);
+  --c-background-section: linear-gradient(44deg, #CD10FF 15.75%, #CD10FF 15.76%, #9F06FF 84.63%);
+  --c-background-slide: rgba(76, 0, 112, 0.2);
   
 }

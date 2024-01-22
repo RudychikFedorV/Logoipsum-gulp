@@ -1,0 +1,71 @@
+.get {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 120px;
+  position: relative;
+
+  &::before,
+  &::after {
+    @include pseudo-element;
+  }
+  &::before {
+    right: -400px;
+    top: 20px;
+    width: 355px;
+    height: 355px;
+    background: var(--c-background-logo);
+  }
+
+  &::after {
+    z-index: 2;
+    right: -200px;
+    bottom: calc(300px - 123px);
+    width: 123px;
+    height: 123px;
+    background: var(--c-background-before);
+  }
+
+  &__getDays {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font: var(--Mon-7-12);
+    text-transform: uppercase;
+    color: var(--c-text-hover);
+
+    max-width: 402px;
+    padding: 8px 34px;
+    border-radius: 33px;
+    background: var(--c-background-block);
+    margin-bottom: 50px;
+  }
+  &__title {
+    max-width: 650px;
+    color: var(--c-text-color1);
+    text-align: center;
+    font: var(--Mon-7-46);
+    line-height: 56px;
+    margin-bottom: 30px;
+  }
+  &__btn {
+    display: flex;
+    color: var(--c-text-white);
+    font: var(--Mul-7-20);
+  }
+  .btn {
+    padding: 20px 49px;
+    border-radius: 33px;
+    background: var(--c-background-logo);
+    max-width: 206px;
+    flex-shrink: 0;
+    transition: var(--transition);
+    &:hover {
+      color: var(--c-text-color1);
+    }
+    &:active {
+      color: var(--c-text-active);
+    }
+  }
+}

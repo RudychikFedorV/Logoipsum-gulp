@@ -26,22 +26,18 @@
     line-height: 30px;
     margin-bottom: 60px;
   }
-  &__containers {
+  &__container {
     display: flex;
     flex-direction: column;
     gap: 30px;
 
     .plan-block {
-      background: var(--c-background-logo);
-      // opacity: 0.05;
+      background: var(--c-background-block);
       border-radius: 21px;
       padding: 39px 54px 41px 46px;
-
-      &__container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
 
       &__sections {
         display: flex;
@@ -79,7 +75,7 @@
         font: var(--Mul-6-16);
         border-radius: 33px;
         background: var(--c-background-logo);
-        padding: 23px 38px;
+        padding: 13px 38px;
         transition: var(--transition);
         &:hover {
           color: var(--c-text-color1);
@@ -92,7 +88,7 @@
         width: 1px;
         height: 30px;
         background: var(--c-text-color3);
-        margin: 0 35px;
+        margin: 0 25px;
       }
     }
   }
