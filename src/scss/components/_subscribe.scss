@@ -1,59 +1,51 @@
 .subscribe {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 80px;
+  margin: 0 -180px;
   padding: 63px 0 50px 0;
   background: var(--c-background-block);
 
-  
-
-  &__input {
+  .subscribe-section {
     display: flex;
     align-items: center;
-    max-width: 890px;
-    width: 100%;
-    margin-inline: auto;
-    background: #f9f1fe;
-    padding-right: 14px;
-    border-radius: 33px;
-    background: #fff;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.05);
+    gap: 80px;
 
-    button {
-      border-radius: 22px;
-      background: #8842f0;
-      padding: 11px 25px;
-    //   font: var(--Button);
-    //   color: var(--c-text-white);
-      cursor: pointer;
-      display: inline-block;
-      border: 0;
-      outline: 0;
-
-      @include mobile {
-        padding: 0;
-        flex-shrink: 0;
-        border-radius: 50%;
-        width: 50px;
-        height: 50px;
-        .text {
-          display: none;
-        }
+    &__input {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 890px;
+      width: 100%;
+      border-radius: 33px;
+      background: var(--c-text-white);
+      box-shadow: var(--c-box-shadow1);
+      padding: 8px;
+      padding-left: 32px;
+    }
+    &__btn {
+      color: var(--c-text-white);
+      font: var(--Mul-7-16);
+    }
+    .btn {
+      padding: 15px 30px;
+      border-radius: 33px;
+      background: var(--c-background-logo);
+      transition: var(--transition);
+      &:hover {
+        color: var(--c-text-color1);
+      }
+      &:active {
+        color: var(--c-text-active);
       }
     }
-
     input {
       width: 100%;
-      padding: 21px 31px;
       background: transparent;
       border: 0;
       outline: 0;
-      color: #000;
-    //   font: var(--Paragraph);
+      color: var(--c-text-color2);
+      font: var(--Mul-4-16);
 
       &::placeholder {
-        color: #6c6c6c;
+        color: var(--c-text-color2);
       }
     }
   }

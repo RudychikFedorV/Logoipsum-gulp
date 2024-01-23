@@ -11,7 +11,7 @@
     @include pseudo-element;
   }
   &::before {
-    right: -400px;
+    right: -480px;
     top: 20px;
     width: 355px;
     height: 355px;
@@ -19,8 +19,7 @@
   }
 
   &::after {
-    z-index: 2;
-    right: -200px;
+    right: -250px;
     bottom: calc(300px - 123px);
     width: 123px;
     height: 123px;

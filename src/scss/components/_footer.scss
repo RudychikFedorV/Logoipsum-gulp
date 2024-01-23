@@ -1,3 +1,41 @@
 .footer {
-	padding: 20px;
+  margin: 0 -180px;
+  background: var(--c-background-block);
+  padding-bottom: 80px;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .desc {
+      color: var(--c-text-color1);
+      font: var(--Mul-7-16);
+      transition: var(--transition);
+
+      &:hover {
+        color: var(--c-text-hover);
+      }
+      &:active {
+        color: var(--c-text-active);
+      }
+    }
+    .text {
+      color: var(--c-text-color2);
+      font: var(--Mul-4-16);
+      transition: var(--transition);
+
+      &:hover {
+        color: var(--c-text-hover);
+      }
+      &:active {
+        color: var(--c-text-active);
+      }
+    }
+  }
 }
