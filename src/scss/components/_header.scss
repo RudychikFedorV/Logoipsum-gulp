@@ -61,6 +61,7 @@
   }
 
   &__a {
+    display: inline-block;
     color: var(--c-text-color1);
     font: var(--Mul-7-16);
     transition: var(--transition);

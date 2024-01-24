@@ -1,6 +1,5 @@
 .reviews {
   padding: 120px 0;
-  margin: 0 -180px;
   display: flex;
   flex-direction: column;
   background: var(--c-background-section);
@@ -28,7 +27,10 @@
     padding: 50px 50px 0 50px;
     border-radius: 20px;
     background: var(--c-background-slide);
-    max-width: 550px;
+
+    .swiper-pagination-bullet {
+      background: var(--c-text-white);
+    }
     .slide {
       margin-bottom: 50px;
       padding: 0 20px;
